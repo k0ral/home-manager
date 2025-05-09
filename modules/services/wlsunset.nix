@@ -152,6 +152,7 @@ in
             };
           in
           "${cfg.package}/bin/wlsunset ${args}";
+        Restart = "on-failure";
       };
 
       Install = {
